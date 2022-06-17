@@ -1,0 +1,92 @@
+body {
+    font-family: cursive, system-ui,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: inline-block;
+    width: 1000px;
+    margin: 0 calc((100% - 1000px)/2);
+    margin-bottom: 50px;
+}
+
+.container:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.container:nth-last-child(3) {
+    margin-bottom: 0;
+}
+
+.container:first-child {
+    margin-top: 20px;
+}
+
+/*HEADER*/
+
+.logo {
+    float: left;
+}
+
+.header-links {
+    float: right;
+    margin-top: 15px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color:black;
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    
+}
+
+.header-links a:last-child {
+    margin-right: 50px;
+} 
+
+.header-links a:hover {
+    text-decoration: underline #FF4522 3px;
+}
+
+/* MAIN*/
+
+.column-left {
+    display:inline-block;
+    float: left;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.main-title .welcome {
+    display: block;
+}
+
+.main-title .lifestyle {
+    color: #FF4522;
+}
+
+p {
+    font-size: 14px;
+}
+
+.leaves {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.column-right {
+    display: inline-block;
+    float: right;
+    width: 55%;
+}
+
+/*FOOTER*/
+
+.socials {
+    float: right;
+}
