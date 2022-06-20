@@ -90,3 +90,12 @@ p {
 .socials {
     float: right;
 }
+
+.socials a {
+    text-decoration: none;
+    color: #D1EFF5; 
+}
+
+.socials a:hover {
+    color: #8CE2DA;
+}

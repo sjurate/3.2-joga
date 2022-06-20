@@ -6,7 +6,14 @@
     padding: 5px 20px;
     border: 2px solid #FF4522;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-decoration: none;
+    box-shadow: 0 4px 8px #7778;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #FF4522;
+    box-shadow: 0 4px 12px #0008;
 }
 
