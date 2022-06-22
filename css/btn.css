@@ -1,10 +1,10 @@
 .btn {
     display: inline-block;
     font-size: 14px;
-    background-color: #FF4522;
+    background-color: var(--main-color);
     color: white;
     padding: 5px 20px;
-    border: 2px solid #FF4522;
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     margin-top: 10px;
     text-decoration: none;
@@ -13,7 +13,7 @@
 
 .btn:hover {
     background-color: white;
-    color: #FF4522;
+    color: var(--main-color);
     box-shadow: 0 4px 12px #0008;
 }
 

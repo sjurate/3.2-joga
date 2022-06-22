@@ -1,12 +1,50 @@
+@import './font-awesome.min.css';
+@import './btn.css';
+
 body {
     font-family: cursive, system-ui,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --main-color: #FF4522;
 }
 
 .container {
     display: inline-block;
     width: 1000px;
-    margin: 0 calc((100% - 1000px)/2);
+    margin: 0 calc(50% - 500px);
     margin-bottom: 50px;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        width: 800px;
+        margin: 0 calc(50% - 400px);
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 600px;
+        margin: 0 calc(50% - 300px);
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+    }
+
+}
+
+@media (max-width: 440px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .container:nth-last-child(2) {
@@ -32,6 +70,23 @@ body {
     margin-top: 15px;
 }
 
+
+@media (max-width: 900px) {
+    .header-links,
+    .logo {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .logo {
+        height: 40px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
 .header-links a {
     text-decoration: none;
     color:black;
@@ -48,7 +103,7 @@ body {
 } 
 
 .header-links a:hover {
-    text-decoration: underline #FF4522 3px;
+    text-decoration: underline var(--main-color) 3px;
 }
 
 /* MAIN*/
@@ -60,12 +115,38 @@ body {
     margin-top: 50px;
 }
 
+.column-right {
+    display: inline-block;
+    float: right;
+    width: 55%;
+}
+
+@media (max-width: 900px) {
+    .column-right {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .column-left,
+    .column-right {
+        display: block;
+        width: 100%;
+        float: none; 
+    }
+
+    .column-right {
+        margin-top: 30px;
+    }
+
+}
+
 .main-title .welcome {
     display: block;
 }
 
 .main-title .lifestyle {
-    color: #FF4522;
+    color: var(--main-color);
 }
 
 p {
@@ -79,11 +160,12 @@ p {
     margin-top: 20px;
 }
 
-.column-right {
-    display: inline-block;
-    float: right;
-    width: 55%;
+@media (max-width: 1100px) {
+    .leaves {
+        display: none;
+    }
 }
+
 
 /*FOOTER*/
 
